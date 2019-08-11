@@ -2,10 +2,21 @@
   "name": "middleground",
   "version": "1.0.0",
   "description": "Center item in middle of text",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel --no-babelrc index.js --out-dir src --presets=@babel/preset-env"
   },
   "author": "Steven Reed",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "install": "^0.13.0",
+    "npm": "^6.10.3"
+  }
 }
