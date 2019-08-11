@@ -1,4 +1,4 @@
-export default (string, element) => {
+const setMiddle = (string, element) => {
     if (!element) {
         return string;
     }
@@ -11,6 +11,8 @@ export default (string, element) => {
         }
         return result;
     }, []);
-    
+
     return finalOutput;
 }
+
+export { setMiddle }

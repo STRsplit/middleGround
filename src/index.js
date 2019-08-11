@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.setMiddle = void 0;
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
@@ -21,7 +21,7 @@ function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = 
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var _default = function _default(string, element) {
+var setMiddle = function setMiddle(string, element) {
   if (!element) {
     return string;
   }
@@ -43,4 +43,4 @@ var _default = function _default(string, element) {
   return finalOutput;
 };
 
-exports["default"] = _default;
+exports.setMiddle = setMiddle;

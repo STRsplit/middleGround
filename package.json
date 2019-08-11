@@ -12,6 +12,16 @@
   },
   "author": "Steven Reed",
   "license": "ISC",
+  "keywords": [
+    "React",
+    "react text",
+    "react center text",
+    "react string center",
+    "react center string",
+    "react center image",
+    "React onclick loader inline",
+    "center item inline"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
