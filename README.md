@@ -35,7 +35,7 @@ class App extends Component {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <p className="App-intro">
-                    If any information is incorrect, please feel free to <a style={{textDecoration: 'none'}} onClick={this.setLoader} href="#">{setMiddle('edit your profile', this.state.showLoader && <img height="16px" src="https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif" />)}</a>. 
+                    If any information is incorrect, please feel free to {setMiddle(<a style={{textDecoration: 'none'}} onClick={this.setLoader} href="#">edit your profile</a>, this.state.showLoader && <img height="16px" src="https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif" />)}</a>. 
                 </p>
             </div>
         </div>

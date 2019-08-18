@@ -22,16 +22,26 @@ function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var setMiddle = function setMiddle(string, element) {
+  var finalizeString = function finalizeString(string) {
+    if (string.props && string.props.children) {
+      return finalizeString(string.props.children);
+    }
+
+    return string;
+  };
+
   if (!element) {
     return string;
   }
 
-  var _ref = string.length % 2 === 0 ? [true, string.length / 2 - 1] : [false, Math.floor(string.length / 2)],
+  var finalString = finalizeString(string);
+
+  var _ref = finalString.length % 2 === 0 ? [true, finalString.length / 2 - 1] : [false, Math.floor(finalString.length / 2)],
       _ref2 = _slicedToArray(_ref, 2),
       even = _ref2[0],
       mid = _ref2[1];
 
-  var finalOutput = string.split('').reduce(function (result, _char, ind) {
+  var finalOutput = finalString.split('').reduce(function (result, _char, ind) {
     if (ind === mid) {
       result = even ? [].concat(_toConsumableArray(result), ["\xA0", element]) : [].concat(_toConsumableArray(result), [element]);
     } else {
